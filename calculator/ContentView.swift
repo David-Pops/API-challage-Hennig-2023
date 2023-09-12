@@ -9,8 +9,9 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-   
     var body: some View {
+            
+        
         VStack {
             HStack{
                 Circle()
@@ -65,14 +66,37 @@ struct ContentView: View {
                     .foregroundColor(.orange)
                 
             }
+                        
+                
+                
+            
         }
     }
 }
 
+func numberButton(buttonNumber: String, buttonColor: Color){
+    var body : some View{
+        ZStack{
+            Circle()
+                .foregroundColor(buttonColor)
+            Text("\(buttonNumber)")
+        }
+    }
+}
 
-
-
-
+func mainButtonRow(textOne: String, textTwo: String, textThree: String, textFour: String){
+    var body : some View{
+        HStack{
+            //numberButton(buttonNumber: textOne, buttonColor: .gray)
+            //.colorInvert()
+            //numberButton(buttonNumber: textTwo, buttonColor: .gray)
+            //.colorInvert()
+            //numberButton(buttonNumber: textThree, buttonColor: .gray)
+            //.colorInvert()
+            //numberButton(buttonNumber: textFour, buttonColor: .orange)
+        }
+    }
+}
 
 
 
