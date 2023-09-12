@@ -14,9 +14,9 @@ struct ContentView: View {
             Text("0")
                 .font(.largeTitle)
                 .frame(width: 380, height: 78, alignment: .trailing)
-                .background(.blue)
-            
-            
+                .foregroundColor(.white)
+                
+        
             
             HStack{
                 numberButton(buttonNumber: "AC", buttonColor: .gray)
