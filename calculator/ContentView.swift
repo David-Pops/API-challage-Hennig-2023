@@ -10,30 +10,49 @@ import CoreData
 
 struct ContentView: View {
     var body: some View{
-        VStack{
-            Text("0")
-                .font(.largeTitle)
-                .frame(width: 380, height: 78, alignment: .trailing)
-                .foregroundColor(.white)
-                
-        
+        ZStack{
+            Rectangle()
+                .background(.black)
             
-            HStack{
-                numberButton(buttonNumber: "AC", buttonColor: .gray)
-                numberButton(buttonNumber: "+/-", buttonColor: .gray)
-                numberButton(buttonNumber: "%", buttonColor: .gray)
-                numberButton(buttonNumber: "÷", buttonColor: .orange)
+            VStack{
+                Spacer()
+                Spacer()
+                Text("0")
+                    .font(.system(size: 80))
+                    .frame(width: 380, height: 78, alignment: .trailing)
+                    .foregroundColor(.white)
                 
+                
+                
+                HStack{
+                    numberButton(buttonNumber: "AC", buttonColor: .gray)
+                    numberButton(buttonNumber: "+/-", buttonColor: .gray)
+                    numberButton(buttonNumber: "%", buttonColor: .gray)
+                    numberButton(buttonNumber: "÷", buttonColor: .orange)
+                    
+                }
+                
+                mainButtonRow(textOne: "7", textTwo: "8", textThree: "9", textFour: "X")
+                mainButtonRow(textOne: "4", textTwo: "5", textThree: "6", textFour: "-")
+                mainButtonRow(textOne: "1", textTwo: "2", textThree: "3", textFour: "+")
+                
+                HStack{
+                    ZStack{
+                    Capsule()
+                        .foregroundColor(.gray)
+                        .frame(width: 195, height: 90)
+                    Text("0")
+                            .font(.largeTitle)
+                    }
+                    .colorInvert()
+                    numberButton(buttonNumber: ".", buttonColor: .gray)
+                        .colorInvert()
+                    numberButton(buttonNumber: "=", buttonColor: .orange)
+                    
+                }
             }
-            
-            
-            mainButtonRow(textOne: "7", textTwo: "8", textThree: "9", textFour: "X")
-            mainButtonRow(textOne: "4", textTwo: "5", textThree: "6", textFour: "-")
-            mainButtonRow(textOne: "1", textTwo: "2", textThree: "3", textFour: "+")
-        
-            
         }
-        .background(.black)
+        
     }
 }
 
