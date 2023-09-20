@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54F53F32ABB4F1F00E839DD /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54F53F22ABB4F1F00E839DD /* Shapes.swift */; };
 		E5AD2CCB2AAB78800059C5E3 /* calculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD2CCA2AAB78800059C5E3 /* calculatorApp.swift */; };
 		E5AD2CCD2AAB78800059C5E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD2CCC2AAB78800059C5E3 /* ContentView.swift */; };
 		E5AD2CCF2AAB78810059C5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD2CCE2AAB78810059C5E3 /* Assets.xcassets */; };
@@ -16,10 +17,6 @@
 		E5AD2CE12AAB78810059C5E3 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD2CE02AAB78810059C5E3 /* calculatorTests.swift */; };
 		E5AD2CEB2AAB78810059C5E3 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD2CEA2AAB78810059C5E3 /* calculatorUITests.swift */; };
 		E5AD2CED2AAB78810059C5E3 /* calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD2CEC2AAB78810059C5E3 /* calculatorUITestsLaunchTests.swift */; };
-		E5B2CF982AB3693800EA4244 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2CF942AB3693800EA4244 /* MyApp.swift */; };
-		E5B2CF992AB3693800EA4244 /* ContentView(0).swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2CF952AB3693800EA4244 /* ContentView(0).swift */; };
-		E5B2CF9A2AB3693800EA4244 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2CF962AB3693800EA4244 /* Package.swift */; };
-		E5B2CF9B2AB3693800EA4244 /* ContentView 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2CF972AB3693800EA4244 /* ContentView 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E54F53F22ABB4F1F00E839DD /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		E5AD2CC72AAB78800059C5E3 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD2CCA2AAB78800059C5E3 /* calculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorApp.swift; sourceTree = "<group>"; };
 		E5AD2CCC2AAB78800059C5E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,10 +50,6 @@
 		E5AD2CE62AAB78810059C5E3 /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD2CEA2AAB78810059C5E3 /* calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITests.swift; sourceTree = "<group>"; };
 		E5AD2CEC2AAB78810059C5E3 /* calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E5B2CF942AB3693800EA4244 /* MyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyApp.swift; path = calculator/MyApp.swift; sourceTree = SOURCE_ROOT; };
-		E5B2CF952AB3693800EA4244 /* ContentView(0).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ContentView(0).swift"; path = "calculator/ContentView(0).swift"; sourceTree = SOURCE_ROOT; };
-		E5B2CF962AB3693800EA4244 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = calculator/Package.swift; sourceTree = SOURCE_ROOT; };
-		E5B2CF972AB3693800EA4244 /* ContentView 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ContentView 2.swift"; path = "calculator/ContentView 2.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +102,6 @@
 			children = (
 				E5AD2CCA2AAB78800059C5E3 /* calculatorApp.swift */,
 				E5AD2CCC2AAB78800059C5E3 /* ContentView.swift */,
-				E5B2CF952AB3693800EA4244 /* ContentView(0).swift */,
 				E5AD2CCE2AAB78810059C5E3 /* Assets.xcassets */,
 				E5AD2CD32AAB78810059C5E3 /* Persistence.swift */,
 				E5AD2CD52AAB78810059C5E3 /* calculator.xcdatamodeld */,
@@ -136,11 +129,9 @@
 		E5AD2CE92AAB78810059C5E3 /* calculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E54F53F22ABB4F1F00E839DD /* Shapes.swift */,
 				E5AD2CEA2AAB78810059C5E3 /* calculatorUITests.swift */,
 				E5AD2CEC2AAB78810059C5E3 /* calculatorUITestsLaunchTests.swift */,
-				E5B2CF972AB3693800EA4244 /* ContentView 2.swift */,
-				E5B2CF942AB3693800EA4244 /* MyApp.swift */,
-				E5B2CF962AB3693800EA4244 /* Package.swift */,
 			);
 			path = calculatorUITests;
 			sourceTree = "<group>";
@@ -278,10 +269,6 @@
 				E5AD2CD42AAB78810059C5E3 /* Persistence.swift in Sources */,
 				E5AD2CD72AAB78810059C5E3 /* calculator.xcdatamodeld in Sources */,
 				E5AD2CCD2AAB78800059C5E3 /* ContentView.swift in Sources */,
-				E5B2CF9A2AB3693800EA4244 /* Package.swift in Sources */,
-				E5B2CF982AB3693800EA4244 /* MyApp.swift in Sources */,
-				E5B2CF992AB3693800EA4244 /* ContentView(0).swift in Sources */,
-				E5B2CF9B2AB3693800EA4244 /* ContentView 2.swift in Sources */,
 				E5AD2CCB2AAB78800059C5E3 /* calculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +287,7 @@
 			files = (
 				E5AD2CED2AAB78810059C5E3 /* calculatorUITestsLaunchTests.swift in Sources */,
 				E5AD2CEB2AAB78810059C5E3 /* calculatorUITests.swift in Sources */,
+				E54F53F32ABB4F1F00E839DD /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

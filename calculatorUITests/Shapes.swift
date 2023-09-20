@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContenView: View {
+struct Shapes: View {
     var body: some View {
         VStack(spacing: 20.0) {
             //Circle
@@ -64,9 +64,9 @@ struct ContenView: View {
     }
 }
 
-struct ContenView_Previews: PreviewProvider {
+struct Shapes_Previews: PreviewProvider {
     static var previews: some View {
-        ContenView()
+        Shapes()
     }
 }
 
